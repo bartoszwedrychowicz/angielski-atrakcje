@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Josefin+Sans&family=Lexend+Deca:wght@300&family=Livvic&display=swap");
+
+:root {
+  --Abel: "Abel", cursive;
+  --Anton: "Anton", cursive;
+  --Josefin: "Josefin", cursive;
+  --Lexend: "Lexend", cursive;
+  --Livvic: "Livvic", cursive;
+
+  /* background */
+  --boats: url(img/bg.jpg);
+  --prism: url(img/prism.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background: var(--prism);
+  transition: background 1s ease;
+}
+
+.BgClass {
+  background: var(--boats);
+}
+
+.kolor {
+  color: #272323;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  background: #444344;
+  min-width: 100vw;
+  width: 100vw;
+  height: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border: #2a2929 solid;
+}
+.obraz {
+  width: 10rem;
+  aspect-ratio: 5/6;
+  border: 1px #2a2929 solid;
+  padding: 10px;
+  padding-top: 20px;
+  margin-top: 10px;
+  background: url("img/image-background.png");
+  cursor: pointer;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 700px);
+  cursor: pointer;
+}
+.overlay {
+  position: relative;
+}
+
+.overlay .link {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 65px;
+  background-color: #111;
+  left: 13px;
+  bottom: -33px;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+  font-size: larger;
+}
+.overlay:hover .link {
+  opacity: 0.8;
+}
+.obraz {
+  width: 600px;
+  height: 500px;
+  border: #2a2929 solid;
+  border-radius: 1rem;
+  float: left;
+}
+img {
+  border-radius: 5rem;
+}
+
+.napis {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+.napis1 {
+  font-size: larger;
+}
+.overlay {
+  position: relative;
+  width: 590px;
+  height: 500px;
+  margin: 50px;
+}
+
+.overlay .link {
+  position: absolute;
+  display: block;
+  width: 600px;
+  height: 65px;
+  background-color: #111;
+  padding-bottom: 5px;
+  left: 13px;
+  bottom: -33px;
+  opacity: 0;
+  color: white;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 3rem;
+}
+.overlay:hover .link {
+  opacity: 0.8;
+}
+header h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #7b9e87;
+  cursor: pointer;
+}
+
+header h1:hover {
+  color: #6a8c76;
+}
+
+.preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* display: grid;
+    place-items: center; */
+}
+.preview {
+  width: 40rem;
+  background: #d2d0ba;
+  color: #5e747f;
+  border: #e3dfaf 0.25rem solid;
+  height: 50rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  box-shadow: -1px 8px 100px 63px rgba(24, 27, 24, 0.47);
+}
+
+.preview h3 {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 200;
+  color: #000;
+}
+
+.preview .h-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview .h-wrapper img {
+  height: 3rem;
+  aspect-ratio: 1 / 1;
+  padding: 1rem;
+  transition: all 0.1s ease-in-out;
+  transition: transform 3s ease-in-out;
+}
+
+.preview .h-wrapper img:hover {
+  height: 3.5rem;
+  aspect-ratio: 1 / 1;
+  transform: rotate(360deg);
+}
+
+.preview .h-wrapper ion-icon {
+  font-size: 3rem;
+  padding: 1rem;
+  transition: all 0.1s ease-in-out;
+  transition: transform 3s ease-in-out;
+}
+
+.preview .h-wrapper ion-icon:hover {
+  font-size: 3.5rem;
+  color: #2a2929;
+  transform: rotate(360deg);
+}
+
+.preview .h-wrapper a {
+  color: #5e747f;
+}
+
+.hide {
+  display: none;
+}
+
+.opacity-off {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(1, 700px);
+  }
+  .preview-container {
+    display: grid;
+    place-items: center;
+  }
+}
