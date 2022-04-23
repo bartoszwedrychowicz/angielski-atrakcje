@@ -204,13 +204,12 @@ header h1:hover {
   font-size: 3rem;
   padding: 1rem;
   transition: all 0.1s ease-in-out;
-  transition: transform 3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .preview .h-wrapper ion-icon:hover {
-  font-size: 3.5rem;
   color: #2a2929;
-  transform: rotate(360deg);
+  transform: scale(1.5);
 }
 
 .preview .h-wrapper a {
