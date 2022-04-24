@@ -172,7 +172,7 @@ class Modal {
   
   const intro = new Intro([
     {
-      title: "Welcome on my website",
+      title: "Welcome to my website",
       body: "Check how to use it by clicking this button ⬊",
     },
     {

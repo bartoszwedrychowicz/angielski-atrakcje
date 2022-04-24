@@ -34,6 +34,7 @@ body {
 
 .kolor {
   color: #272323;
+  transition: 150ms ease-in-out;
 }
 
 .footer {
@@ -146,10 +147,11 @@ header h1 {
   font-size: 5rem;
   color: #7b9e87;
   cursor: pointer;
+  transition: all 150ms ease-in-out;
 }
 
 header h1:hover {
-  color: #6a8c76;
+  filter: brightness(120%);
 }
 
 .preview-container {
