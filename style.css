@@ -11,6 +11,7 @@
   /* background */
   --boats: url(img/bg.jpg);
   --prism: url(img/prism.png);
+  --korek: url(img/korek.webp)
 }
 
 * {
@@ -163,10 +164,11 @@ header h1:hover {
     place-items: center; */
 }
 .preview {
+  font-weight: 600;
   width: 40rem;
-  background: #d2d0ba;
-  color: #5e747f;
-  border: #e3dfaf 0.25rem solid;
+  background: var(--korek);
+  color: black;
+  border: #c8c497 0.25rem solid;
   height: 50rem;
   margin: 1rem;
   border-radius: 1rem;
@@ -178,8 +180,8 @@ header h1:hover {
 
 .preview h3 {
   padding: 1rem;
-  font-size: 2rem;
-  font-weight: 200;
+  font-size: 3rem;
+  font-weight: bold;
   color: #000;
 }
 
@@ -189,7 +191,7 @@ header h1:hover {
 }
 
 .preview .h-wrapper img {
-  height: 3rem;
+  height: 3.7rem;
   aspect-ratio: 1 / 1;
   padding: 1rem;
   transition: all 0.1s ease-in-out;
@@ -197,12 +199,13 @@ header h1:hover {
 }
 
 .preview .h-wrapper img:hover {
-  height: 3.5rem;
+  height: 4rem;
   aspect-ratio: 1 / 1;
   transform: rotate(360deg);
 }
 
 .preview .h-wrapper ion-icon {
+  color: black;
   font-size: 3rem;
   padding: 1rem;
   transition: all 0.1s ease-in-out;
@@ -210,7 +213,6 @@ header h1:hover {
 }
 
 .preview .h-wrapper ion-icon:hover {
-  color: #2a2929;
   transform: scale(1.5);
 }
 
