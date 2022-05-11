@@ -176,24 +176,29 @@ class Modal {
       body: "Check how to use it by clicking this button ⬊",
     },
     {
-      title: "Test Title 2",
-      body: "This is the body of the modal 2",
+      title: "There are 12 pictures below",
+      body: "You can view their description by clicking on them",
       element: document.querySelector("[data-first]"),
     },
     {
-      title: "Test Title 3",
-      body: "This is the body of the modal 3",
+      title: "Opening cards",
+      body: "Then, with the help of magic, the description of the place will appear",
       element: document.querySelector("[data-second]"),
     },
     {
-        title: "Test Title 4",
-        body: "This is the body of the modal 4",
+        title: "Closing cards",
+        body: "You can close your card by clicking rudder icon",
         element: document.querySelector("[data-third]"),
       },
       {
-        title: "Test Title 5",
-        body: "This is the body of the modal 5",
+        title: "Boat icon",
+        body: "In the upper left corner you can see a boat icon, clicking on it will redirect you to the website of that place",
         element: document.querySelector("[data-fourth]"),
+      },
+      {
+        title: "That's all!",
+        body: "Have a good time!",
+        element: document.querySelector("[data-fifth]"),
       },
   ])
   intro.start()

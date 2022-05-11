@@ -92,7 +92,7 @@
 .close-btn {
   align-items: center;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius:  0 0 0 1rem;
   box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
   box-sizing: border-box;
   color: #121212;
