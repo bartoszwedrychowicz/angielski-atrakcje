@@ -85,3 +85,85 @@ boxfourclose.addEventListener("click", () => {
     boxfour.classList.add("hide");
   }, 1);
 });
+
+// pięć
+
+const piec = document.getElementById("piec");
+const boxfive = document.getElementById("preview-box-piec");
+const boxfiveclose = document.getElementById("close-five");
+
+piec.addEventListener("click", () => {
+  boxfive.classList.remove("hide");
+  setTimeout(function () {
+    boxfive.classList.remove("opacity-off");
+  }, 20);
+  window.scrollTo(0, 0);
+});
+
+boxfiveclose.addEventListener("click", () => {
+  boxfive.classList.add("opacity-off");
+  setTimeout(function () {
+    boxfive.classList.add("hide");
+  }, 1);
+});
+
+// sześć
+
+const szesc = document.getElementById("szesc");
+const boxsix = document.getElementById("preview-box-szesc");
+const boxsixclose = document.getElementById("close-six");
+
+szesc.addEventListener("click", () => {
+  boxsix.classList.remove("hide");
+  setTimeout(function () {
+    boxsix.classList.remove("opacity-off");
+  }, 20);
+  window.scrollTo(0, 0);
+});
+
+boxsixclose.addEventListener("click", () => {
+  boxsix.classList.add("opacity-off");
+  setTimeout(function () {
+    boxsix.classList.add("hide");
+  }, 1);
+});
+// siedem
+const siedem = document.getElementById("siedem");
+const boxseven = document.getElementById("preview-box-siedem");
+const boxsevenclose = document.getElementById("close-seven");
+
+siedem.addEventListener("click", () => {
+  boxseven.classList.remove("hide");
+  setTimeout(function () {
+    boxseven.classList.remove("opacity-off");
+  }, 20);
+  window.scrollTo(0, 0);
+});
+
+boxsevenclose.addEventListener("click", () => {
+  boxseven.classList.add("opacity-off");
+  setTimeout(function () {
+    boxseven.classList.add("hide");
+  }, 1);
+});
+
+// osiem
+
+const osiem = document.getElementById("osiem");
+const boxeight = document.getElementById("preview-box-osiem");
+const boxeightclose = document.getElementById("close-eight");
+
+osiem.addEventListener("click", () => {
+  boxeight.classList.remove("hide");
+  setTimeout(function () {
+    boxeight.classList.remove("opacity-off");
+  }, 20);
+  window.scrollTo(0, 0);
+});
+
+boxeightclose.addEventListener("click", () => {
+  boxeight.classList.add("opacity-off");
+  setTimeout(function () {
+    boxeight.classList.add("hide");
+  }, 1);
+});
